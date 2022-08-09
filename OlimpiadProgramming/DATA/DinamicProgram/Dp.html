@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<!--
+	InnoCalc
+	p.s. Egor U
+-->
+<html>
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="Plus/html; charset=utf-8">
+		<link rel="stylesheet" href="../../style.css">
+		<link rel="stylesheet" href="../../gorizoNav.css">
+		<link rel="stylesheet" href="../../verticalNav.css">
+		
+		<style type="text/css">
+		   #Dp
+		   { 
+		    background-color: #009d4b;
+		   }
+  		</style> <!-- Выделение навигации-->
+ 
+
+	</head>
+
+
+	<body>
+		
+	<?php include('../nav.php'); // включает навигацию?>
+
+
+
+
+
+	<br></br>
+	<div class = "Text"> <Biggreen>Динамическое программирование</Biggreen> <br></br><br></br>
+
+		Динамическое программирование - это метод решения задач путем её разбиения на подзадачи. Например <green>числа Фибоначчи</green> - для вычисление некоторого числа в этой последовательности нужно найти предыдущие.<br></br>
+
+		<green>Задача:</green> Максимальная возрастающая подпоследовательность.<br></br>
+
+		Вам дан массив из n чисел <green>a<sub>1</sub>...a<sub>n</sub></green>. Нужно найти числа <green>b<sub>1</sub>...b<sub>k</sub></green> образующие возрастающую подпоследовательность.<br></br>
+
+		<green>Решение:</green> заведем массив <green>dp</green>, в котором все элементы равны 1. Для каждого <green>dp<sub>i</sub></green> от 1 до i-1 будем находить максимальную <green>dp<sub>j</sub></green>, для которой <green>a<sub>i</sub> > dp<sub>j</sub></green>. Это работает за <green>O(n<sup>2</sup>)</green>.<br></br>
+
+		В динамическом программировании есть алгоритмы оптимизации решения. Например <green>Convex Hull Trick</green>, <green>Meet-in-the-middle</green>.
+
+
+			
+<br></br><br></br><br></br>
+
+	<a href="Dp.cpp" style = "text-decoration: none;">Код</a><br></br>
+
+
+
+		</div>
+
+	
+	<!-- jQuery -->
+
+	</body>
+</html>
+

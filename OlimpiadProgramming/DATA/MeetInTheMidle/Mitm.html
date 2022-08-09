@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<!--
+	InnoCalc
+	p.s. Egor U
+-->
+<html>
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="Plus/html; charset=utf-8">
+		<link rel="stylesheet" href="../../style.css">
+		<link rel="stylesheet" href="../../gorizoNav.css">
+		<link rel="stylesheet" href="../../verticalNav.css">
+		
+		<style type="text/css">
+		   #Mitm 
+		   { 
+		    background-color: #009d4b;
+		   }
+  		</style> <!-- Выделение навигации-->
+ 
+
+	</head>
+
+
+	<body>
+
+		<?php include('../nav.php'); // включает навигацию?>
+
+
+
+
+
+
+		<br></br>
+		<div class = "Text"> <Biggreen>Meet-in-the-middle</Biggreen> <br></br><br></br>
+
+		Meet-in-the-middle - это алгоритм оптимизации динамического программирования. Он разбивает задачу пополам и решает её через частичный расчёт половинок.<br></br>
+
+		<green>Пример на задаче G.Переполнение</green>:<br></br>
+
+		<green>Условие</green>: Есть две чаши весов и n гирь, i-я гиря имеет вес a<sub>i</sub>. Нужно уравнять чаши весов и вывести на какой чаши, какая лежит гиря.<br></br>
+
+		<green>Плохое решение</green>: рекурсией будем брать гирю и сначала класть на первую чашу, потом на вторую и вообще убирать. Асимптотика O(3<sup>n</sup>), что не проходит.<br></br>
+
+		<green>Решение через Meet-in-the-middle</green>: разделим массив пополам и проделаем операцию выше для двух половин массива. Мы нашли ответ для левой и правой половин массива, поэтому нам нужно совместить полученные результаты, чтобы узнать ответ для всего массива. Асимптотика O(3<sup>n/2</sup>).<br></br>
+			
+<br></br><br></br><br></br>
+
+	<a href="Mitm.cpp" style = "text-decoration: none;">Код</a><br></br>
+
+
+
+		</div>
+
+	
+	<!-- jQuery -->
+
+	</body>
+</html>
+

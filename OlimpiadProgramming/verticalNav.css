@@ -1,0 +1,45 @@
+
+
+ul.vert
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 14%;
+  background-color: /*#333*/ #555;
+  position: fixed;
+  left:0px;
+  height: 100%;
+  overflow: auto;
+}
+
+ul.vert li a
+{
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  color:white;
+}
+
+ul.vert li.tx
+{
+  font-size: 130%;
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  color:limegreen;
+  text-align: left;
+}
+
+
+ul.vert li a.active /* Выделение Темы */
+{
+  background-color: #009d4b;
+}
+
+ul.vert li a:hover:not(.active) 
+{
+  background-color: #009d4b;
+}

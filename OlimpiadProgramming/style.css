@@ -1,0 +1,84 @@
+
+
+/*  #4CAF50 - green*/
+body
+{
+   /*background-image: url(images/back.jpg);*/
+   font-family:verdana;
+   background-color: #333;
+   color:white;
+   font-size: 100%;
+}
+
+green
+{
+    /*color:#4CAF50;*/
+    color: limegreen;
+}
+
+biggreen
+{
+    /*color:#4CAF50;*/
+    color: limegreen;
+    font-size: 140%;
+}
+
+
+.scale
+{
+    transition: 0.7s;
+     width:250px;
+     height:150px;
+}
+
+.scale:hover
+{
+    transform: scale(3); /* Увеличиваем масштаб */
+}
+
+.Text
+{
+	line-height: 100%;
+	margin-top: 3%;
+	margin-left:15%;
+	height:900px;
+	text-align: left;
+  font-size: 120%;
+  line-height: 150%;
+
+}
+
+
+.strongT
+{
+	font-size: 150%;
+	text-align: left;
+}
+
+
+
+
+table 
+{
+  border-collapse: collapse;
+  width: 85%;
+}
+
+th, td 
+{
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #555}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+a
+{
+	color:rgb(255 , 255 , 0);
+}
